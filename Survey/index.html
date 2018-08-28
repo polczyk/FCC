@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="title">Survey</h1>
+
+    <p id="description">
+      A short explanation of this form's purpose.
+    </p>
+
+    <form id="survey-form" action="#">
+      <div id="form-grid">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Name" required />
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Email" required />
+
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" min="0" max="100" placeholder="Number" />
+
+        <label for="select-label">Profession</label>
+        <select id="dropdown">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+
+        <label>Choice 1</label>
+        <ul>
+          <li>
+            <input type="radio" name="group1" value="rd1" id="radio-1" />
+            <label for="radio-1">Yes</label>
+          </li>
+          <li>
+            <input type="radio" name="group1" value="rd2" id="radio-2" />
+            <label for="radio-2">No</label>
+          </li>
+        </ul>
+
+        <label>Choice 2</label>
+        <ul>
+          <li>
+            <input type="checkbox" value="check1" id="checkbox-1" />
+            <label for="checkbox-1">PC</label>
+          </li>
+          <li>
+            <input type="checkbox" value="check2" id="checkbox-2" />
+            <label for="checkbox-2">Console</label>
+          </li>
+          <li>
+              <input type="checkbox" value="check3" id="checkbox-3" />
+              <label for="checkbox-3">Mobile</label>
+            </li>
+        </ul>
+
+        <label for="">Tell us more about yourself:</label>
+        <textarea rows="4" cols="20"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </div>
+
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </div>
+</body>
+
+</html>
