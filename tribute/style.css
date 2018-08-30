@@ -1,4 +1,59 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
     margin: 0;
     padding: 0;
 }
+
+body {
+    background: #ADC4E8;
+}
+
+#container {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background: white;
+}
+
+figure {
+    max-width: 50%;
+    margin: auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 80%;
+    margin-top: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+article {
+    text-align: left;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+ul {
+    padding: 0;
+    list-style-type: square;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+a {
+    color: #2C68C8;
+}
+
+li{
+    margin: 1rem;
+   }
