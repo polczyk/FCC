@@ -68,5 +68,9 @@ li{
            max-width: 85%;
            margin: 0 2rem;
        }
+
+       article {
+           margin: 0 2rem;
+       }
    }
    
