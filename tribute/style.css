@@ -57,3 +57,16 @@ a {
 li{
     margin: 1rem;
    }
+
+   @media (max-width: 640px) {
+       #container {
+           width: 100%;
+           padding: 0;
+       }
+
+       figure {
+           max-width: 85%;
+           margin: 0 2rem;
+       }
+   }
+   
