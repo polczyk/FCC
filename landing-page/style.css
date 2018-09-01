@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding-bottom: 2em;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    padding-bottom: 2em;
+    font-size: 150%;
+}
+
+h2 {
+    padding: 1em;
+}
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.85em;
+    padding: 1.1em 2em;
+}
+
+.nav-link:hover {
+    background: red;
+}
+#header {
+    display: flex;
+    align-items: center;
+    background: rgb(247, 46, 46);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    max-height: 75px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header ul {
+    display: flex;
+    list-style: none;
+}
+
+#header-title {
+    font-size: 150%;
+    width: 70%;
+}
+
+#container {
+    width: 70%;
+    position: relative;
+    top: 75px;
+    margin: auto;
+    text-align: center;
+}
+
+#packages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#packages ul {
+    list-style-type: none;
+}
+.package-box {
+    border: 1px solid;
+    min-width: 200px;
+    background: white;
+    border-radius: 5px;
+}
+.package-name {
+    padding: 0.5em;
+    background: red;
+}
+.package-offer {
+    margin: 1em;
+}
+.package-offer li {
+    margin: 0.5em;
+}
+
+.section {
+    padding: 1em 0;
+    margin: 15px 0;
+    background: #eeeeee;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.4);
+}
+
+#students {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.student-box {
+    margin: 0 2em;
+}
+
+.student-box img {
+    border-radius: 50%;
+}
+
+#video {
+    display: block;
+    margin: auto;
+}
