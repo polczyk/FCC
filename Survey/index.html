@@ -3,6 +3,7 @@
 <html>
 
 <head>
+  <title>Survey</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,46 +12,45 @@
     <h1 id="title">Survey</h1>
 
     <p id="description">
-      A short explanation of this form's purpose.
+      Census of web developers.
     </p>
 
     <form id="survey-form" action="#">
       <div id="form-grid">
-        <div class="grid-element">
+        <div class="grid-element question">
           <label for="name" id="name-label">Name:</label>
         </div>
         <div class="grid-element">
           <input type="text" id="name" placeholder="Name" required />
         </div>
 
-        <div class="grid-element">
+        <div class="grid-element, question">
           <label for="email" id="email-label">Email:</label>
         </div>
         <div class="grid-element">
           <input type="email" id="email" placeholder="Email" required />
         </div>
 
-        <div class="grid-element">
+        <div class="grid-element, question">
           <label for="number" id="number-label">Age:</label>
         </div>
         <div class="grid-element">
           <input type="number" id="number" min="0" max="100" placeholder="Number" />
         </div>
 
-        <div class="grid-element">
-          <label for="select-label">Profession</label>
-          
+        <div class="grid-element, question">
+          <label for="select-label">Level of proficiency</label>
         </div>
         <div class="grid-element">
             <select id="dropdown">
-                <option>Option 1</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
               </select>
         </div>
 
-        <div class="grid-element">
-          <label>Choice 1</label>
+        <div class="grid-element, question">
+          <label>Are you employed in IT?</label>
         </div>
         <div class="grid-element">
           <ul>
@@ -65,27 +65,27 @@
           </ul>
         </div>
 
-        <div class="grid-element">
-          <label>Choice 2</label>
+        <div class="grid-element, question">
+          <label>Which of the following technologies are you familiar with?</label>
         </div>
         <div class="grid-element">
           <ul>
             <li>
               <input type="checkbox" value="check1" id="checkbox-1" />
-              <label for="checkbox-1">PC</label>
+              <label for="checkbox-1">HTML</label>
             </li>
             <li>
               <input type="checkbox" value="check2" id="checkbox-2" />
-              <label for="checkbox-2">Console</label>
+              <label for="checkbox-2">CSS</label>
             </li>
             <li>
               <input type="checkbox" value="check3" id="checkbox-3" />
-              <label for="checkbox-3">Mobile</label>
+              <label for="checkbox-3">JavaScript</label>
             </li>
           </ul>
         </div>
 
-        <div class="grid-element">
+        <div class="grid-element, question">
           <label for="">Tell us more about yourself:</label>
         </div>
         <div class="grid-element">
