@@ -16,56 +16,84 @@
 
     <form id="survey-form" action="#">
       <div id="form-grid">
-        <label for="name" id="name-label">Name:</label>
-        <input type="text" id="name" placeholder="Name" required />
+        <div class="grid-element">
+          <label for="name" id="name-label">Name:</label>
+        </div>
+        <div class="grid-element">
+          <input type="text" id="name" placeholder="Name" required />
+        </div>
 
-        <label for="email" id="email-label">Email:</label>
-        <input type="email" id="email" placeholder="Email" required />
+        <div class="grid-element">
+          <label for="email" id="email-label">Email:</label>
+        </div>
+        <div class="grid-element">
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
 
-        <label for="number" id="number-label">Age:</label>
-        <input type="number" id="number" min="0" max="100" placeholder="Number" />
+        <div class="grid-element">
+          <label for="number" id="number-label">Age:</label>
+        </div>
+        <div class="grid-element">
+          <input type="number" id="number" min="0" max="100" placeholder="Number" />
+        </div>
 
-        <label for="select-label">Profession</label>
-        <select id="dropdown">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
+        <div class="grid-element">
+          <label for="select-label">Profession</label>
+          
+        </div>
+        <div class="grid-element">
+            <select id="dropdown">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+        </div>
 
-        <label>Choice 1</label>
-        <ul>
-          <li>
-            <input type="radio" name="group1" value="rd1" id="radio-1" />
-            <label for="radio-1">Yes</label>
-          </li>
-          <li>
-            <input type="radio" name="group1" value="rd2" id="radio-2" />
-            <label for="radio-2">No</label>
-          </li>
-        </ul>
+        <div class="grid-element">
+          <label>Choice 1</label>
+        </div>
+        <div class="grid-element">
+          <ul>
+            <li>
+              <input type="radio" name="group1" value="rd1" id="radio-1" />
+              <label for="radio-1">Yes</label>
+            </li>
+            <li>
+              <input type="radio" name="group1" value="rd2" id="radio-2" />
+              <label for="radio-2">No</label>
+            </li>
+          </ul>
+        </div>
 
-        <label>Choice 2</label>
-        <ul>
-          <li>
-            <input type="checkbox" value="check1" id="checkbox-1" />
-            <label for="checkbox-1">PC</label>
-          </li>
-          <li>
-            <input type="checkbox" value="check2" id="checkbox-2" />
-            <label for="checkbox-2">Console</label>
-          </li>
-          <li>
+        <div class="grid-element">
+          <label>Choice 2</label>
+        </div>
+        <div class="grid-element">
+          <ul>
+            <li>
+              <input type="checkbox" value="check1" id="checkbox-1" />
+              <label for="checkbox-1">PC</label>
+            </li>
+            <li>
+              <input type="checkbox" value="check2" id="checkbox-2" />
+              <label for="checkbox-2">Console</label>
+            </li>
+            <li>
               <input type="checkbox" value="check3" id="checkbox-3" />
               <label for="checkbox-3">Mobile</label>
             </li>
-        </ul>
+          </ul>
+        </div>
 
-        <label for="">Tell us more about yourself:</label>
-        <textarea rows="4" cols="20"></textarea>
-
-        <button type="submit" id="submit">Submit</button>
+        <div class="grid-element">
+          <label for="">Tell us more about yourself:</label>
+        </div>
+        <div class="grid-element">
+          <textarea rows="4" cols="20"></textarea>
+        </div>
       </div>
 
+      <button type="submit" id="submit">SUBMIT</button>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
