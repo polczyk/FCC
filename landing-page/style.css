@@ -222,11 +222,12 @@ input[type=submit]:hover {
 #footer {
     position: relative;
     top: 85px;
-    background: #26413c;
+    background: #468579;
     color: #d9e0df;
     text-align: center;
-    padding: 4em;
+    padding: 2em;
     font-size: 130%;
+    margin-bottom: 0;
 }
 
 #footer ul {
@@ -242,8 +243,6 @@ input[type=submit]:hover {
     color: inherit;
     font-size: 0.85em;
     display: block;
-    height: 100%;
-    padding: 1.5em 0;
 }
 
 #footer li {
