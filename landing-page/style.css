@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Molle:400i');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: whitesmoke;
     padding-bottom: 2em;
     font-size: 100%;
@@ -23,65 +26,122 @@ body {
     width: 100%;
     z-index: 10;
     top: 0;
-    max-height: 75px;
     font-size: 150%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
+    margin-left: auto;  
+    align-items: center;
 }
 
 .nav-link {
     text-decoration: none;
     color: inherit;
     font-size: 0.85em;
-    padding: 1.1em 2em;
+    display: block;
+    height: 100%;
+    padding: 1.5em 0;
 }
 
 .nav-link:hover {
-    background: red;
+    background: #335852;
 }
 
 #header ul {
     display: flex;
     list-style: none;
+    align-items: center;
+    justify-items: stretch;
+    height: 100%;
+    width: 50%;
+}
+
+#header li {
+    flex: 1 1 200px;
 }
 
 #header-title {
     font-size: 150%;
-    width: 70%;
+    /*width: 70%;*/
 }
 
 #container {
     width: 70%;
     position: relative;
-    top: 75px;
+    top: 85px;
     margin: auto;
     text-align: center;
 }
 
 .section {
     background: #fff;
+    padding-bottom: 1.5em;
 }
 
 .section-content {
-    padding: 3em 0;
+    padding: 1.5em 0;
 }
 
-h2 {
+.section h2 {
     font-size: 2em;
-    background: #fff;
+    padding: 3%;
+    margin-bottom: 1.5em;
 }
 
-#video {
-    width: 100%;
-    height: 100%;   
+.company-name {
+    font-family: 'Molle', cursive;
+    color: #740a27;
+    font-size: 400%;
+}
+
+input, button {
+    display: block;
+    margin: 1em auto;
+}
+
+input[type=email] {
+    padding: 0.5em 0.25em;
+    font-size: 1.5em;
+    text-align: center;
+    width: 500px;
+}
+
+input[type=submit] {
+    font-size: 1.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    border: none;
+    background: #740a27;
+    font-weight: bolder;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background: #80203a;
+    text-shadow: 0 4px 2px #68152b;
+}
+
+#intro p {
+    font-size: 85%;
+    font-style: italic;
+    color: black;
+}
+
+#intro h2 {
+    font-size: 300%;
+    background: #d9d9d9;
 }
 
 #offer {
     background: #7dc6b9;
     font-size: 110%;
+}
+
+#offer h2 {
+    background: #5fb9a9;
 }
 
 .offer-flex {
@@ -104,13 +164,22 @@ h2 {
     background: #f4ffc3;
 }
 
+#pricing h2 {
+    background: #dde8ac;
+}
+
 #testimony {
-    background: #ff5582;
+    background: #ffbfd0;
+}
+
+#testimony h2 {
+    background: #ff95b1;
 }
 
 #packages {
     display: flex;
     justify-content: center;
+    /*margin-top: -45px;*/
 }
 
 #packages ul {
@@ -118,16 +187,16 @@ h2 {
 }
 
 .package-box {
-    border: 1px solid;
     min-width: 200px;
     background: white;
     border-radius: 5px;
     margin: 0 2%;
     box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.5);
 }
+
 .package-name {
     padding: 0.5em;
-    background: #E23A59;
+    background: #f3ffbd ;
     font-size: 150%;
     font-weight: bolder;
 }
@@ -150,7 +219,33 @@ h2 {
     border-radius: 50%;
 }
 
-#video {
-    display: block;
+#footer {
+    position: relative;
+    top: 85px;
+    background: #26413c;
+    color: #d9e0df;
+    text-align: center;
+    padding: 4em;
+    font-size: 130%;
+}
+
+#footer ul {
+    display: flex;
     margin: auto;
+    justify-items: center;
+    width: 50%;
+    margin: auto;
+    list-style: none;
+}
+
+#footer a {
+    color: inherit;
+    font-size: 0.85em;
+    display: block;
+    height: 100%;
+    padding: 1.5em 0;
+}
+
+#footer li {
+    flex: 1 1 1100px;
 }
