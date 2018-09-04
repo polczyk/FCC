@@ -11,12 +11,28 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: whitesmoke;
     padding-bottom: 2em;
+    font-size: 100%;
+    color: #black;
+    background: #3E506B;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    background: #44ADAD;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    max-height: 75px;
     font-size: 150%;
 }
 
-h2 {
-    padding: 1em;
+nav {
+    display: flex;
+    justify-content: space-evenly;
 }
+
 .nav-link {
     text-decoration: none;
     color: inherit;
@@ -26,21 +42,6 @@ h2 {
 
 .nav-link:hover {
     background: red;
-}
-#header {
-    display: flex;
-    align-items: center;
-    background: rgb(247, 46, 46);
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    top: 0;
-    max-height: 75px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 #header ul {
@@ -61,36 +62,79 @@ nav {
     text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+    background: #fff;
+    margin: 1em 0;
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+
+}
+
+#video {
+    width: 100%;
+    height: 100%;   
+}
+
+#offer {
+    background: #FCC82B;
+    font-size: 110%;
+}
+
+.offer-flex {
+    display: flex;
+}
+
+.offer-flex-cell-1 {
+    flex: 3 1 0;
+    padding: 1em;
+}
+
+.offer-flex-cell-2 {
+    flex: 2 1 0;
+    padding: 1em;
+    line-height: 2;
+    text-align: left;
+}
+
+#testimony {
+    background: #E23A59;
+}
+
+#pricing {
+    background: white;
+}
+
 #packages {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #packages ul {
     list-style-type: none;
 }
+
 .package-box {
     border: 1px solid;
     min-width: 200px;
     background: white;
     border-radius: 5px;
+    margin: 0 2%;
 }
 .package-name {
     padding: 0.5em;
-    background: red;
+    background: #E23A59;
+    font-size: 150%;
+    font-weight: bolder;
 }
-.package-offer {
-    margin: 1em;
-}
+
 .package-offer li {
-    margin: 0.5em;
+    margin: 3em 0;
 }
 
 .section {
-    padding: 1em 0;
-    margin: 15px 0;
-    background: #eeeeee;
-    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.4);
+    padding: 3em;
+    background: #fff;
 }
 
 #students {
