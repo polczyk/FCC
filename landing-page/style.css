@@ -32,9 +32,10 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-items: center;
     margin-left: auto;  
     align-items: center;
+    width: 25%;
 }
 
 .nav-link {
@@ -54,13 +55,14 @@ nav {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-items: stretch;
+    justify-items: start;
     height: 100%;
-    width: 50%;
+    width: 100%;
 }
 
 #header li {
     flex: 1 1 200px;
+    text-align: center;
 }
 
 #header-title {
@@ -180,6 +182,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     /*margin-top: -45px;*/
+    font-size: 130%;
 }
 
 #packages ul {
@@ -187,9 +190,9 @@ input[type=submit]:hover {
 }
 
 .package-box {
-    min-width: 200px;
+    width: 250px;
     background: white;
-    border-radius: 5px;
+    border-radius: 4px;
     margin: 0 2%;
     box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.5);
 }
@@ -228,6 +231,7 @@ input[type=submit]:hover {
     padding: 2em;
     font-size: 130%;
     margin-bottom: 0;
+    margin-top: 5%;
 }
 
 #footer ul {
