@@ -297,7 +297,10 @@ height: 100%;
 
 @media (max-width: 750px) {
  
-    
+    input[type=email] {
+        width: 80%;
+        margin: 0 auto;
+    }
     nav {
         width: 100%;
     }
@@ -325,5 +328,11 @@ height: 100%;
 
     .student-box {
         margin: 4% 0;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        flex-direction: column;
     }
 }
