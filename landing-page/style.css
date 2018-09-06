@@ -297,6 +297,9 @@ height: 100%;
 
 @media (max-width: 750px) {
  
+    #header {
+    }
+
     input[type=email] {
         width: 80%;
         margin: 0 auto;
@@ -334,5 +337,8 @@ height: 100%;
 @media (max-width: 400px) {
     header {
         flex-direction: column;
+    }
+    #container {
+        top: 205px;
     }
 }

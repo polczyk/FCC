@@ -120,7 +120,17 @@
             <li><a href="">Contact</a></li>
         </ul>
     </footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        window.addEventListener('scroll', (e) => {
+            console.log(e.pageY);
+            if (e.pageY >= 200) {
+                document.getElementById('header').style.display = 'none';
+            }
+            else {
+                document.getElementById('header').style.display = 'flex';
+            }
+        });
+    </script>
 </body>
 
 </html>
