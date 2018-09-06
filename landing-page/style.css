@@ -35,7 +35,7 @@ nav {
     justify-items: center;
     margin-left: auto;  
     align-items: center;
-    width: 25%;
+    width: 30%;
 }
 
 .nav-link {
@@ -45,10 +45,12 @@ nav {
     display: block;
     height: 100%;
     padding: 1.5em 0;
+    flex: 1 1 200px;
+    transition: all 350ms ease-in-out;
 }
 
 .nav-link:hover {
-    background: #335852;
+    background: #45a090;
 }
 
 #header ul {
@@ -146,17 +148,20 @@ input[type=submit]:hover {
     background: #5fb9a9;
 }
 
+#video {
+}
+
 .offer-flex {
     display: flex;
 }
 
 .offer-flex-cell-1 {
-    flex: 3 1 0;
+    flex: 3 1 100%;
     padding: 1em;
 }
 
 .offer-flex-cell-2 {
-    flex: 2 1 0;
+    flex: 1 1 100%;
     padding: 1em;
     line-height: 2;
     text-align: left;
@@ -246,9 +251,60 @@ input[type=submit]:hover {
 #footer a {
     color: inherit;
     font-size: 0.85em;
-    display: block;
 }
 
+#footer a:hover {
+    color: #9dafac;
+}
 #footer li {
     flex: 1 1 1100px;
+}
+
+@media (max-width: 1350px) {
+    #container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1028px) {
+    #container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 940px) {
+    #container {
+        width: 100%;
+    }
+
+    .offer-flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    #packages {
+        flex-direction: column;
+    }
+
+    .package-box {
+        width: 55%;
+        margin: 2% auto;    ;
+    }
+
+    #students {
+        flex-direction: column;
+        width: 100%;
+        font-size: 200%;
+    }
+
+    .student-box img {
+        padding: 2%;
+        width: 60%;
+        border-radius: 0;
+    }
+
+    .student-box {
+        margin: 4% 0;
+    }
 }
