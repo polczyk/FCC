@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: 400px;
+    font-family: 'Inconsolata', monospace;
+    color: #568e9c;
+}
+
+
+#container {
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+    background: #1d1e40;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    padding: 2%;
+}
+
+#name {
+    flex: 1 1 100%;
+    font-size: 150%;
+}
+
+nav {
+    flex: 1 1 20%;
+}
+
+#showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1%;
+    justify-items: center;
+    display: none;
+}
+
+.project {
+    width: 200px;
+    transition: all 1s ease-in-out;
+}
+
+
+.project:hover {
+    background-image: url("https://loremflickr.com/200/200");
+    animation-duration: 1s;
+    animation-name: height;
+}
+
+@keyframes height {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 400px;
+    }
+}
