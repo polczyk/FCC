@@ -20,9 +20,9 @@ body {
 
 #container {
     padding: var(--main-padding);
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    background: #1d1e40;
+    background: #001623;
 }
 
 #header {
@@ -37,7 +37,27 @@ body {
 }
 
 #name h1 {
-    font-size: 40px;
+    font-size: 50px;
+    color: #006E36;
+}
+
+h2 {
+    color: hsl(192, 29%, 60%);
+}
+h3 {
+    color: hsl(192, 29%, 50%);
+}
+
+.showcase-h2 {
+    text-align: center;
+    padding: 1% 5% 0  5%;
+    font-size: 250%;
+    border-top: 1px dashed #657100;
+    border-left: 1px dashed #657100;
+    border-right: 1px dashed #657100;
+    width: 30rem;
+    margin: auto;
+    margin-bottom: 5%;
 }
 
 nav {
@@ -46,20 +66,27 @@ nav {
     font-size: 150%;
 }
 
+nav a {
+    margin: 0 2%;
+}
+
 #showcase {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 6.5%;
-    justify-items: center;
+    grid-gap: 100px;
+    justify-items:center;
 }
 
+.project {
+    box-shadow: 0 0 100px 10px hsl(202, 100%, 35%);
+}
 a {
-    color: #5557A6;
+    color: #A65B00;
     transition: color 200ms linear;
 }
 
 a:hover {
-    color :#cccde5;
+    color: #cccde5;
 }
 
 #content {
@@ -67,16 +94,38 @@ a:hover {
 }
 
 #about-me {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     font-size: 105%;
 }
 
-.about-me {
-    width: 48%;
+
+.about-me:nth-child(1) {
+    padding: 3em 3em 3em 0;
+}
+.about-me:nth-child(3) {
+border-top: 1px dashed #657100;
+border-right: 1px dashed #657100;
 }
 
-    #skills {
+.about-me:nth-child(4) {
+border-bottom: 1px dashed #657100;
+padding: 3em 0 3em 3em;
+
+}
+
+.about-me:nth-child(5) {
+    border-right: 1px dashed #657100;
+    height: 300px;
+}
+
+.about-me:nth-child(4) h2 {
+    margin-top: -2em;
+}
+
+
+
+#skills {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -92,5 +141,24 @@ a:hover {
 }
 
 footer {
-    padding: 2%;
+    padding: 10%;
+    text-align: center;
 }
+
+footer a {
+    margin: 0 3%;
+}
+
+@media (max-width: 1280px) {
+    #container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    #container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
