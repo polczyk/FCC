@@ -4,7 +4,7 @@
 }
 
 :root {
-    --main-padding: 2%;
+    --main-padding: 5%;
 }
 
 body {
@@ -27,9 +27,8 @@ body {
 
 #header {
     display: flex;
-    padding: var(--main-padding);
     align-items: flex-end;
-    
+    padding: 5% 0 10% 0;
 }
 
 #name {
@@ -48,7 +47,6 @@ nav {
 }
 
 #showcase {
-    padding: var(--main-padding);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 6.5%;
@@ -65,7 +63,6 @@ a:hover {
 }
 
 #content {
-    padding: 2%;
     line-height: 2.5;
 }
 
