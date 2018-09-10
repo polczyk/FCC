@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --main-padding: 2%;
+}
+
 body {
     background-image: url("bg.jpg");
     background-size: 400px;
@@ -10,57 +14,86 @@ body {
     color: #568e9c;
 }
 
+#bg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
 #container {
-    padding: 2%;
+    padding: var(--main-padding);
     width: 80%;
     margin: 0 auto;
     background: #1d1e40;
-    height: 100vh;
 }
 
 #header {
     display: flex;
-    justify-content: stretch;
-    flex-wrap: nowrap;
-    padding: 2%;
+    padding: var(--main-padding);
+    align-items: flex-end;
+    
 }
 
 #name {
+    font-size: 250%;
+    flex: 1 1 100%;
+}
+
+#name h1 {
+    font-size: 40px;
+}
+
+nav {
+    text-align: right;
     flex: 1 1 100%;
     font-size: 150%;
 }
 
-nav {
-    flex: 1 1 20%;
-}
-
 #showcase {
+    padding: var(--main-padding);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1%;
+    grid-gap: 6.5%;
     justify-items: center;
-    display: none;
 }
 
-.project {
-    width: 200px;
-    transition: all 1s ease-in-out;
+a {
+    color: #5557A6;
+    transition: color 200ms linear;
 }
 
-
-.project:hover {
-    background-image: url("https://loremflickr.com/200/200");
-    animation-duration: 1s;
-    animation-name: height;
+a:hover {
+    color :#cccde5;
 }
 
-@keyframes height {
-    from {
-        width: 200px;
-    }
+#content {
+    padding: 2%;
+    line-height: 2.5;
+}
 
-    to {
-        width: 400px;
-    }
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    font-size: 105%;
+}
+
+.about-me {
+    width: 48%;
+}
+
+    #skills {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+#skills li {
+    flex: 1 1 50%;
+}
+
+#skills li:before {
+    content: "-";
+}
+
+footer {
+    padding: 2%;
 }
