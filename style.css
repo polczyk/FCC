@@ -9,6 +9,7 @@
 
 body {
     background-image: url("bg.jpg");
+    background-attachment: fixed;
     background-size: 400px;
     color: #568e9c;
     font-family: 'Inconsolata', monospace;
@@ -127,7 +128,7 @@ a:hover {
             box-shadow: 0 0 100px 10px hsl(202, 100%, 35%);
         }
 
-        #showcase .showcase-h2 {
+        .showcase-h2 {
             border-top: 1px dashed #66710085;
             border-left: 1px dashed #66710085;
             border-right: 1px dashed #66710085;
