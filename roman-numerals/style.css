@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Cinzel|Questrial');
+
+body {
+    background: #263238;
+    color: #B0BEC5;
+  }
+  
+  #container {
+    padding-top: 5%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 300%;
+  }
+  
+  input {
+    width: 90%;
+    background: #37474F;
+    border: 1px double #455A64;
+    font-size: 100%;
+    padding: 0.5em;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #B0BEC5;
+  }
+
+  output {
+      font-size: 150%;
+  }
+  
